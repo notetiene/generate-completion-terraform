@@ -28,7 +28,7 @@ zsh-completion :
 \\n\
 # /bin/echo -e '$(ZSH_DEBUG_PREFACE)'\\n\
 \\n\
-autoload -U +X bashcompinit && bashcompinit\
+autoload -U +X bashcompinit && bashcompinit\\n\
 complete -o nospace -C /usr/bin/terraform terraform" > $(OUTPUT_DIR)/$(ZSH_OUTPUT_FILENAME)
 
 .PHONY : clean
